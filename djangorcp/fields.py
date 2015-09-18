@@ -1,6 +1,6 @@
 from django.db import models
 
-from django-rcp.widgets import ColorPickerWidget
+from djangorcp.widgets import ColorPickerWidget
 
 
 class ColorField(models.CharField):

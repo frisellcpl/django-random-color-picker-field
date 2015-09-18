@@ -1,7 +1,8 @@
 from django import forms
 from django.conf import settings
 from django.utils.safestring import mark_safe
-from django-rcp.colors import get_random_color_set
+
+from djangorcp.colors import get_random_color_set
 
 
 class ColorPickerWidget(forms.TextInput):
