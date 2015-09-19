@@ -9,12 +9,12 @@ class ColorPickerWidget(forms.TextInput):
     class Media:
         css = {
             'all': (
-                settings.STATIC_URL +'djangorcp/colorPicker.css',
+                'djangorcp/colorPicker.css',
             )
         }
         js = (
             '//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js',
-            settings.STATIC_URL + 'djangorcp/colorPicker.js',
+            'djangorcp/colorPicker.js',
         )
 
     def __init__(self, language=None, attrs=None):
