@@ -5,5 +5,3 @@ djangorcp/__init__.py
 djangorcp/colors.py
 djangorcp/fields.py
 djangorcp/widgets.py
-recursive-include djangorcp/static/djangorcp *
-
