@@ -5,3 +5,5 @@ djangorcp/__init__.py
 djangorcp/colors.py
 djangorcp/fields.py
 djangorcp/widgets.py
+djangorcp/static/djangorcp/colorPicker.css
+djangorcp/static/djangorcp/colorPicker.js
