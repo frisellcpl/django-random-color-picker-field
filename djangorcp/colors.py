@@ -33,7 +33,7 @@ class ColorGenerator:
 
     def get_best_distance(self, color, current_best):
         distance = self.get_distance(color)
-        return min(distance, current_best)
+        return distance if not current_best else min(distance, current_best)
 
 
     def generate_new_color(self):
