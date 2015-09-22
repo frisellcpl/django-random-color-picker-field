@@ -4,6 +4,8 @@ from colorsys import hsv_to_rgb
 
 class ColorGenerator:
     colors = []
+    saturation = None
+    value = None
 
     def get_random_color_set(self, s=None, v=None):
         self.saturation = s
