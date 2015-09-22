@@ -2,7 +2,7 @@ from django import forms
 from django.conf import settings
 from django.utils.safestring import mark_safe
 
-from djangorcp.colors import get_random_color_set
+from djangorcp.colors import ColorGenerator
 
 
 class ColorPickerWidget(forms.TextInput):
@@ -35,7 +35,8 @@ class ColorPickerWidget(forms.TextInput):
             attrs['id'] = "id_%s" % name
 
         parts = []
-        colors = get_random_color_set()
+        generator = ColorGenerator
+        colors = generator.get_random_color_set(0.875, 1.0)
 
         rendered = super(ColorPickerWidget, self).render(name, value, attrs)
         parts.append(rendered)
