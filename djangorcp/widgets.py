@@ -35,7 +35,7 @@ class ColorPickerWidget(forms.TextInput):
             attrs['id'] = "id_%s" % name
 
         parts = []
-        generator = ColorGenerator
+        generator = ColorGenerator()
         colors = generator.get_random_color_set(0.875, 1.0)
 
         rendered = super(ColorPickerWidget, self).render(name, value, attrs)
