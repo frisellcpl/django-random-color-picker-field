@@ -1,4 +1,5 @@
 import random
+import math
 
 
 def get_random_color_set():
@@ -24,7 +25,7 @@ def generate_new_color(existing_colors):
     max_distance = None
     best_color = None
 
-    for i in range(0,10):
+    for i in range(0,100):
         color = get_random_color()
 
         if not existing_colors:
