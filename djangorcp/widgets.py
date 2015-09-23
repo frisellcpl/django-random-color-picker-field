@@ -36,7 +36,13 @@ class ColorPickerWidget(forms.TextInput):
 
         parts = []
         generator = ColorGenerator()
-        colors = generator.get_random_color_set(0.875, 1.0)
+
+        try:
+            sat = settings.DJANGORCP['color']['saturation']
+            val = settings.DJANGORCP['color']['value']
+            colors = generator.get_random_color_set(sat, val)
+        except:
+            colors = generator.get_random_color_set()
 
         rendered = super(ColorPickerWidget, self).render(name, value, attrs)
         parts.append(rendered)
