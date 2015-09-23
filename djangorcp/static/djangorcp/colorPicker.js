@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('.color-picker').empty();
     $('.color-box').colorPicker();
 });
 
