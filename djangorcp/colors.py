@@ -2,9 +2,9 @@ import random
 import math
 
 class ColorGenerator:
-    colors = []
 
     def get_random_color_set(self, s=None, v=None):
+        self.colors = []
         self.saturation = s
         self.value = v
 
