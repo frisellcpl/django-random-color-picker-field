@@ -23,13 +23,12 @@ class ColorGenerator:
 
         return (h, s, v)
 
-
     def generate_new_color(self):
         h,s,v = self.get_random_hsv()
         return tuple(self.hsv_to_rgb(h,s,v))
 
     def hsv_to_rgb(self, h, s, v):
-        # One might as himself why I don't use colorsys here.
+        # One might ask himself why I don't use colorsys here.
         # Well, just out of stupidity i guess. And I wanted to implement the
         # algorithm found at https://en.wikipedia.org/wiki/HSL_and_HSV as
         # readable as possible.
