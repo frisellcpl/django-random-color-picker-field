@@ -38,7 +38,7 @@ class ColorPickerWidget(forms.TextInput):
         generator = ColorGenerator()
 
         try:
-            if settings.DJANGORCP['color']['fixed_values']:
+            if 'fixed_values' in settings.DJANGORCP['color']:
                 colors = settings.DJANGORCP['color']['fixed_values']
             else:
                 sat = settings.DJANGORCP['color']['saturation']
