@@ -7,15 +7,15 @@ setup(
         'djangorcp'
     ],
     package_data={'': ['static/djangorcp/*']},
-    version = '1.0.16',
-    description = 'A color picker field for Django admin that lets you pick a color from 24 randomly generated colors.',
+    version = '1.1.0',
+    description = 'A color picker field for Django admin that lets you pick a color from 24 randomly generated colors or a fixed list of hex values.',
     author = 'Johan Frisell',
     author_email = 'johan@trell.se',
     requires = [
         'Django (>=1.7)',
     ],
     url = 'https://github.com/frisellcpl/django-random-color-picker-field',
-    download_url = 'https://github.com/frisellcpl/django-random-color-picker-field/tarball/1.0.16',
+    download_url = 'https://github.com/frisellcpl/django-random-color-picker-field/tarball/1.1.0',
     keywords = [
         'django',
         'colorpicker',
