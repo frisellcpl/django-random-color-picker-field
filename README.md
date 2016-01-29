@@ -3,7 +3,7 @@ Generates a set of random colors. Gives them a certain saturation and value if a
 If you specify a set of fixed colors no randomization will be made and given colors presented instead.
 
 Sample settings (please note that all settings are listed):
-
+```python
 DJANGORCP = {
     'color': {
         'saturation': 0.301,
@@ -11,3 +11,4 @@ DJANGORCP = {
         'fixed_values': ['#000000', '#e3e3e3']
     },
 }
+```
